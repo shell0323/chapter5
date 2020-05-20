@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
 
 header {
 	width: 100%;
@@ -27,9 +32,10 @@ header > h1 {
 	padding: 0 20px;
 }
 .main {
-	height: 700px;
-	width: 100%;
+	width: 840px;
 	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 .row1 .row2 .row3 {
@@ -41,46 +47,55 @@ header > h1 {
 	height: 200px;
 	width: 200px;
 	display: inline-block;
-	margin: 0 auto;
-}
-.row1 > .col {
-	margin-top: 50px;
 }
 .row1 > .first {
 	background-color: #e6ffe9;
+	float: left;
+
 }
 .row1 > .second {
 	background-color: #cbffd3;
+	float: left;
 }
 .row1 > .third {
 	background-color: #aeffbd;
+	float: left;
 }
 .row1 > .force {
 	background-color: #93ffab;
+	float: left;
 }
 .row2 > .first {
 	background-color: #f3ffd8;
+	float: left;
 }
 .row2 > .second {
 	background-color: #edffbe;
+	float: left;
 }
 .row2 > .third {
 	background-color: #e9ffa5;
+	float: left;
 }
 .row2 > .force {
 	background-color: #e4ff8d;
+	float: left;
 }
 .row3 > .first {
 	background-color: #d9e5ff;
+	float: left;
 }
 .row3 > .second {
 	background-color: #bad3ff;
+	float: left;
 }
 .row3 > .third {
 	background-color: #a4c6ff;
+	float: left;
 }
 .row3 > .force {
 	background-color: #8eb8ff;
+	float: left;
 }
 footer {
 	height: 120px;
